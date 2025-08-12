@@ -1,0 +1,131 @@
+Level Three 
+====================================================================================================================================
+Level Three - MERN (MongoDB, Express, React (Frontend/client), Node Runtime)
+
+Full stack - Three tiers architecture
+Frontend (User Interface) & Backend (Server and Storage/Database)
+
+User Interface - Server - Database
+
+User interface - HTML CSS JavaScript & Frameworks
+Server - JS PHP Python Java Ruby 
+Database - Firebase Redis MongoDB MySQL
+
+
+Relational  - SQL
+Non-Relational - NoSQL
+-------------------------------------------------------------------------------------------
+Assignment - Post on Linkedin
+I am Student in SQI, currently in level 3, I am starting React. This is what i have learnt so far.
+
+npm i
+y
+npm create vite @latest
+intro
+
+
+
+---------------------------------------------------------------------------
+------------- Start a backend project ------------
+npm init - /start
+--------  click enter -------
+then (yes) - yes
+npm install express ---- install express server
+node index.js ---- to check the console
+npm i -g nodemon - works like a live server to automatically refresh
+nodemon start
+npm i dotenv 
+npm i mongoose
+npm i body-parser
+
+---------------------------------------------------------------------------
+create .gitignore
+add node_modules to it
+create index.js 
+
+next time you create a new folder - run "npm init -y" so you wont have to install express anymore
+-------------------------------------------------------------------------------
+then;
+
+const express = require('express');
+const app = express()
+const port = 5000
+
+or 
+const express app = require('express')()
+const port = 5000
+
+
+//set up a server
+app.listen(port, () => {
+    console.log(Server is running on port ${port})
+})
+-------------------------------------------------------------------------------
+
+
+
+GET - Response
+POST - Response & Pay
+PUT
+PATCH
+DELETE
+----------------------------------------------------------------------------
+
+Node Second class
+----------------------------------------------
+npm i dotenv on the command prompt
+then create a file name .env
+add the port (PORT=5100) inside it
+add the .env to .gitignore
+-----------------------------------------------
+add this to your index.js file
+require('dotenv').config()
+const port =  process.env.PORT || 5100
+---------------------------------------------------
+Create a new Repo on Git
+push your code to git
+Go to vercel
+Deploy your project
+Add vercel.json to the folder so it can display after you deploy with vercel
+-------------------------------------------------------------------
+install json viewer on chrome for colourful view (optional)
+
+create a public folder
+create an index.html inside it
+res.sendFile - to display an HTML file via server(node)
+res.send(__dirname + '/public/index.html')
+dirname - directoty name
+
+Assignment - create API links, create an index.html to explain each links
+-------------------------------------------------------------------------------
+Go to MongoDB
+Create an account
+click on Database Access then create a database user
+Go to Data services then create a cluster
+pick free and name it
+==========================================================================
+on the terminal enter npm i mongoose
+on the index.js file
+mongoose.connect(URI)
+.then(() => {
+    console.log('Lift off!, database neural handshake completed')
+})
+.catch((err)=> {
+    console.log(err)
+})
+=========================================================================
+go back to mongoBD site
+
+connect to an application - Drivers (Mongoose)
+copy the url, paste on the index.js file and change <dp_password> to your password
+------------------------------------------------------------------------------------------------------------------------------------
+const URI = 'mongodb+srv://Jaysmart98:Jaysmart98@clusterjsm.s8f1w.mongodb.net/?retryWrites=true&w=majority&appName=ClusterJSM';
+
+password is Jaysmart98
+
+enter nodemon whenever you want to check or refresh
+=====================================================================================================================================
+Take the uri to the env  == uri = mongodb+srv://Jaysmart98:@Jaysmart98@clusterjsm.s8f1w.mongodb.net/?retryWrites=true&w=majority&appName=ClusterJSM
+
+Then enter on the index.js ==> const URI = process.env.URI || undefined
+======================================================================================================================================================

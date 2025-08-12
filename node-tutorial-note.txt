@@ -1,0 +1,47 @@
+What is Node.js?  
+----------------
+Node.js is an open-source, cross-platform Javascript runtime environment.
+
+Open Source - source code is publicly available for sharing and modification
+
+Cross Platform - Available on MAc, Windows, and Linux.
+
+JavaScript runtime environment - provides all neccessary components in order to use and run a JavaScript program outsie the browser.
+
+Course Structure.
+-----------------
+1. Terms and concept to understand what is Node.js
+2. Modules (User defined)
+3. Built-in Modules
+4. Node.js internals
+5. npm - Node package manager
+6. CLI tool
+
+=================================================
+
+ECMAScript Summary
+------------------
+. ECMA-262 is the language specification
+. ECMAScript is the language that implements     ECMA-262
+. JavaScript is basically ECMAScript at its core, but built on that
+
+=================================================
+
+WHAT YOU CAN BUILD WITH NODE.js
+-------------------------------
+. Traditional website
+. Backend services like APIs
+. Real-time applications
+. Streaming services
+. CLI tools 
+. Multiplayer games,  and lot more
+Node.js allows you to build complex and powerful applications
+
+=================================================
+MODULES:
+    A module is an encapsulated and reusable chunnk of code that has its own content.
+    In Node.js, each file is treated as a separate module.
+TYPES:
+    1. Local Modules - Modules that we create in out applications
+    2. Built-in Modules - Modules that Node.js ships with out of the box 
+    3. Third party Modules - Modules written by other developers that we can use in our application

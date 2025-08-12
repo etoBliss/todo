@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="w-100 mx-auto px-5 py-5 shadow" action="/edit" method="post">
+      <h1>Edit LIST</h1>
+      <div class="input">
+        <label for="subject">Subject:</label>
+        <input
+          value="<%= onetodo.subject %>"
+          name="subject"
+          id="subject"
+          type="text"
+          required
+        />
+      </div>
+      <div class="input">
+        <label for="detail">Detail:</label>
+        <textarea
+          value="<%= onetodo.detail %>"
+          name="detail"
+          id="detail"
+          required
+        ></textarea>
+      </div>
+      <button class="mt-2 px-4 py-2 shadow">ADD</button>
+    </form>
+  </body>
+</html>

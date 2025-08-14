@@ -59,9 +59,9 @@ app.post("/user/login", (req, res) => {
 });
 
 app.get("/dashboard", (req, res) => {
-  // if (!currentUser) {
-  //   return res.redirect("/login");
-  // }
+  if (!currentUser) {
+    return res.redirect("/login");
+  }
   res.render("dashboard", { user: currentUser, todo: todoList });
 });
 app.post("/dashboard", (req, res) => {

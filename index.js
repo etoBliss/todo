@@ -77,13 +77,21 @@ app.post("/todo/delete", (req, res) => {
   res.redirect("/dashboard");
 });
 
-app.get ( "/edit/:index", (req, res)=> {
+app.get("/edit/:index", (req, res) => {
   console.log(req.params);
-  const {index} = req.params
-  const onetodo = todoList[index]
+  const { index } = req.params;
+  const onetodo = todoList[index];
   console.log(onetodo);
-  res.render("edit", {onetodo})
-})
+  res.render("edit", { onetodo, index });
+});
+app.post("/edit/:index", (req, res) => {
+  console.log(req.body);
+  console.log(req.params);
+  const { index } = req.params;
+  console.log(todoList[index]);
+  todoList[index] = req.body
+  res.redirect("/dashboard")
+});
 
 app.listen(port, () => {
   console.log(`App started at port ${port}`);
